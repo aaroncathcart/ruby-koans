@@ -6,9 +6,9 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
   attr_accessor :values
 
   def roll(i)
-    self.values = []
+    @values = []
     i.times do
-      self.values << rand(1..6)
+      @values << rand(1..6)
     end
   end
 end
